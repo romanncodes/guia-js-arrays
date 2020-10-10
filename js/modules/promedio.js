@@ -6,28 +6,47 @@ export default {
   data: `
     <h1>Mis Promedios</h1>
     Asignatura <br />
-    <input id="txt1" type="text" /><br/>
+    <input id="txt1" type="text" /><br />
 
-    Nota 1 <br />
-    <input id="txtn1" type="number" /><br/>
-    % Nº1 <br />
-    <input id="txtp1" type="number" /><br />
+    <div class="box">
+      <div class="box-nota">
+        Nota 1 <br />
+        <input id="txtn1" type="number" />
+      </div>
+      <div class="box-porcentaje">
+        % Nº1<br />
+        <input id="txtp1" type="number" />
+      </div>
+    </div>
 
-    Nota 2 <br />
-    <input id="txtn2" type="number" /><br/>
-    % Nº2 <br />
-    <input id="txtp2" type="number" /><br />
+    <div class="box">
+      <div class="box-nota">
+        Nota 2 <br />
+        <input id="txtn2" type="number" />
+      </div>
+      <div class="box-porcentaje">
+        % Nº2 <br />
+        <input id="txtp2" type="number" />
+      </div>
+    </div>
 
-    Nota 3 <br />
-    <input id="txtn3" type="number" /><br/>
-    % Nº3 <br />
-    <input id="txtp3" type="number" /><br />
+    <div class="box">
+        <div class="box-nota">
+            Nota 3 <br />
+            <input id="txtn3" type="number" />
+        </div>
+        <div class="box-porcentaje">
+            % Nº3 <br />
+            <input id="txtp3" type="number" />
+        </div>
+    </div>
 
-    <button onclick = "calcular()">calular</button>
-
+    <br /><br />
+    <button onclick="calcular()">calular</button>
+    <br /><br />
     <div id="salida"></div>
-
-
+     
+    </div>
   `,
 
   calcular: function () {
@@ -52,14 +71,14 @@ export default {
     }
     if (txtn2.value < 1 || txtn2.value > 7) {
       alert("la nota 2 no esta entre 1 y 7");
-      txtn1.value = "";
-      txtn1.focus();
+      txtn2.value = "";
+      txtn3.focus();
       return;
     }
     if (txtn3.value < 1 || txtn3.value > 7) {
       alert("la nota 3 no esta entre 1 y 7");
-      txtn1.value = "";
-      txtn1.focus();
+      txtn3.value = "";
+      txtn3.focus();
       return;
     }
 

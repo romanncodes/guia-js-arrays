@@ -5,3 +5,30 @@
 .nota_azul {
   color: rgb(92, 133, 92);
 }
+
+.box {
+  display: flex;
+}
+
+.box-nota {
+  margin: 10px 30px 10px 0px;
+}
+
+.box-porcentaje {
+  margin: 10px 30px 10px 0px;
+}
+
+#txtp1,
+#txtp2,
+#txtp3 {
+  width: 50px;
+}
+
+input {
+  padding: 5px;
+}
+
+button {
+  padding: 8px;
+  width: 130px;
+}
